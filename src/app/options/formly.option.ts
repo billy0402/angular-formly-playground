@@ -7,6 +7,7 @@ import { FormlyFieldSelect } from '@ngx-formly/material/select';
 
 import { FormlyFormGroup } from '@custom-formly/formly-form-group.component';
 import { FormlyFieldFile } from '@custom-formly/formly-field-file.component';
+import { FormlyFieldAutocomplete } from '@custom-formly/formly-field-autocomplete.component';
 import { LabelWrapperComponent } from '@custom-formly/formly-label-wrapper.component';
 import { DateRangeWrapperComponent } from '@custom-formly/formly-date-range-wrapper.component';
 
@@ -44,6 +45,11 @@ export const formlyModuleConfig: ConfigOption = {
     {
       name: 'file',
       component: FormlyFieldFile,
+      wrappers: ['label-wrapper', 'form-field'],
+    },
+    {
+      name: 'autocomplete',
+      component: FormlyFieldAutocomplete,
       wrappers: ['label-wrapper', 'form-field'],
     },
   ],

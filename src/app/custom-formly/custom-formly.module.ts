@@ -4,8 +4,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { FormlyModule } from '@ngx-formly/core';
 
+import { MaterialModule } from '@modules/material.module';
+
 import { FormlyFormGroup } from './formly-form-group.component';
 import { FormlyFieldFile } from './formly-field-file.component';
+import { FormlyFieldAutocomplete } from './formly-field-autocomplete.component';
 import { LabelWrapperComponent } from './formly-label-wrapper.component';
 import { DateRangeWrapperComponent } from './formly-date-range-wrapper.component';
 import { FileValueAccessor } from './file-value-accessor.directive';
@@ -14,14 +17,21 @@ import { FileValueAccessor } from './file-value-accessor.directive';
   declarations: [
     FormlyFormGroup,
     FormlyFieldFile,
+    FormlyFieldAutocomplete,
     LabelWrapperComponent,
     DateRangeWrapperComponent,
     FileValueAccessor,
   ],
-  imports: [CommonModule, ReactiveFormsModule, FormlyModule.forChild()],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    FormlyModule.forChild(),
+    MaterialModule,
+  ],
   exports: [
     FormlyFormGroup,
     FormlyFieldFile,
+    FormlyFieldAutocomplete,
     LabelWrapperComponent,
     DateRangeWrapperComponent,
   ],

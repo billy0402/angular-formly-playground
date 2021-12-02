@@ -1,4 +1,14 @@
+import { of } from 'rxjs';
+
 import { FormlyFieldConfig } from '@ngx-formly/core';
+
+const states = ['Alabama', 'Alaska', 'American Samoa', 'Arizona', 'Arkansas'];
+
+function filterStates(name: string): string[] {
+  return states.filter(
+    (state) => state.toLowerCase().indexOf(name.toLowerCase()) === 0,
+  );
+}
 
 export const appFields: FormlyFieldConfig[] = [
   {
@@ -146,6 +156,17 @@ export const appFields: FormlyFieldConfig[] = [
           description: 'Description',
           required: true,
           multiple: true,
+        },
+      },
+      {
+        key: 'autocomplete',
+        type: 'autocomplete',
+        templateOptions: {
+          label: 'Autocomplete',
+          placeholder: 'Placeholder',
+          required: true,
+          filter: (term: string) =>
+            of(term ? filterStates(term) : states.slice()),
         },
       },
     ],
