@@ -104,6 +104,30 @@ export const appFields: FormlyFieldConfig[] = [
         },
       },
       {
+        wrappers: ['label-wrapper', 'date-range-wrapper'],
+        templateOptions: { label: 'Date Range' },
+        fieldGroup: [
+          {
+            key: 'start',
+            type: 'datepicker',
+            templateOptions: {
+              placeholder: 'Placeholder',
+              description: 'Description',
+              required: true,
+            },
+          },
+          {
+            key: 'end',
+            type: 'datepicker',
+            templateOptions: {
+              placeholder: 'Placeholder',
+              description: 'Description',
+              required: true,
+            },
+          },
+        ],
+      },
+      {
         key: 'toggle',
         type: 'toggle',
         wrappers: ['label-wrapper', 'form-field'],

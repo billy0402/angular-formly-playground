@@ -7,6 +7,7 @@ import { FormlyModule } from '@ngx-formly/core';
 import { FormlyFormGroup } from './formly-form-group.component';
 import { FormlyFieldFile } from './formly-field-file.component';
 import { LabelWrapperComponent } from './formly-label-wrapper.component';
+import { DateRangeWrapperComponent } from './formly-date-range-wrapper.component';
 import { FileValueAccessor } from './file-value-accessor.directive';
 
 @NgModule({
@@ -14,9 +15,15 @@ import { FileValueAccessor } from './file-value-accessor.directive';
     FormlyFormGroup,
     FormlyFieldFile,
     LabelWrapperComponent,
+    DateRangeWrapperComponent,
     FileValueAccessor,
   ],
   imports: [CommonModule, ReactiveFormsModule, FormlyModule.forChild()],
-  exports: [FormlyFormGroup, FormlyFieldFile, LabelWrapperComponent],
+  exports: [
+    FormlyFormGroup,
+    FormlyFieldFile,
+    LabelWrapperComponent,
+    DateRangeWrapperComponent,
+  ],
 })
 export class CustomFormlyModule {}

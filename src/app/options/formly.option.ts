@@ -8,6 +8,7 @@ import { FormlyFieldSelect } from '@ngx-formly/material/select';
 import { FormlyFormGroup } from '@custom-formly/formly-form-group.component';
 import { FormlyFieldFile } from '@custom-formly/formly-field-file.component';
 import { LabelWrapperComponent } from '@custom-formly/formly-label-wrapper.component';
+import { DateRangeWrapperComponent } from '@custom-formly/formly-date-range-wrapper.component';
 
 export const formlyModuleConfig: ConfigOption = {
   types: [
@@ -46,7 +47,10 @@ export const formlyModuleConfig: ConfigOption = {
       wrappers: ['label-wrapper', 'form-field'],
     },
   ],
-  wrappers: [{ name: 'label-wrapper', component: LabelWrapperComponent }],
+  wrappers: [
+    { name: 'label-wrapper', component: LabelWrapperComponent },
+    { name: 'date-range-wrapper', component: DateRangeWrapperComponent },
+  ],
   validationMessages: [{ name: 'required', message: 'This field is required' }],
   extras: { lazyRender: true },
 };
