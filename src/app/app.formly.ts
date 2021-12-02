@@ -3,6 +3,7 @@ import { FormlyFieldConfig } from '@ngx-formly/core';
 export const appFields: FormlyFieldConfig[] = [
   {
     type: 'form-group',
+    // templateOptions: { flexDirection: 'horizontal' },
     fieldGroup: [
       {
         key: 'input',
@@ -12,6 +13,7 @@ export const appFields: FormlyFieldConfig[] = [
           placeholder: 'Placeholder',
           description: 'Description',
           required: true,
+          flexDirection: 'vertical',
         },
       },
       {
