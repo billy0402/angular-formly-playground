@@ -5,6 +5,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormlyModule } from '@ngx-formly/core';
 import { FormlyMaterialModule } from '@ngx-formly/material';
+import { FormlyMatDatepickerModule } from '@ngx-formly/material/datepicker';
+import { FormlyMatToggleModule } from '@ngx-formly/material/toggle';
+import { formlyModuleConfig } from '@options/formly.option';
+
+import { MaterialModule } from '@modules/material.module';
+import { CustomFormlyModule } from '@custom-formly/custom-formly.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,12 +24,14 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
 
     // Third party modules
-    FormlyModule.forRoot({ extras: { lazyRender: true } }),
+    FormlyModule.forRoot(formlyModuleConfig),
     FormlyMaterialModule,
+    FormlyMatDatepickerModule,
+    FormlyMatToggleModule,
 
     // Shared modules
-
-    // Components module
+    MaterialModule,
+    CustomFormlyModule,
 
     // App's modules
     AppRoutingModule,

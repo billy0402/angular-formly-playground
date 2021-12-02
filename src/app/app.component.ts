@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+
+import { FormlyFieldConfig } from '@ngx-formly/core';
+
+import { appFields } from './app.formly';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +12,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-formly-playground';
+  form = new FormGroup({});
+  model = {};
+  fields: FormlyFieldConfig[] = appFields;
+
+  onSubmit(): void {
+    console.log(this.model);
+  }
 }

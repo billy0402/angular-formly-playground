@@ -16,7 +16,12 @@
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
-    "lib": ["es2018", "dom"]
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "@custom-formly/*": ["src/app/custom-formly/*"],
+      "@modules/*": ["src/app/modules/*"],
+      "@options/*": ["src/app/options/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

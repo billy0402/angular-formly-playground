@@ -1,0 +1,17 @@
+::ng-deep mat-form-field {
+  .mat-form-field-label {
+    display: none !important;
+  }
+
+  .mat-select-arrow {
+    margin-top: 0.5em;
+  }
+
+  .mat-form-field-infix {
+    padding: 0.5em 0 1em 0 !important;
+  }
+
+  .mat-form-field-suffix {
+    top: 0.4em !important;
+  }
+}
