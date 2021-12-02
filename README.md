@@ -1,6 +1,18 @@
-# AngularFormlyPlayground
+# angular-formly-playground
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.13.
+
+## environment
+
+- [macOS 10.15.7](https://www.apple.com/tw/macos/catalina/)
+- [VSCode 1.62.3](https://code.visualstudio.com/)
+- [nvm 0.38.0, node 16.13.0, npm 8.1.0](https://nodejs.org/en/)
+- [Angular CLI 12.2.13](https://cli.angular.io/)
+
+## packages
+
+- [Angular Material](https://material.angular.io/)
+- [Formly](https://formly.dev/)
 
 ## Development server
 
