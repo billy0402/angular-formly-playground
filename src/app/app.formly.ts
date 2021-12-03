@@ -169,6 +169,13 @@ export const appFields: FormlyFieldConfig[] = [
             of(term ? filterStates(term) : states.slice()),
         },
       },
+      {
+        key: 'plainText',
+        type: 'plain-text',
+        templateOptions: {
+          label: 'Plain Text',
+        },
+      },
     ],
   },
 ];
