@@ -10,7 +10,7 @@ import { FieldWrapper } from '@ngx-formly/core';
       [class.label-wrapper-vertical]="to.flexDirection === 'vertical'"
     >
       <label
-        [style.width]="to.label ? '100px' : 'unset'"
+        [style.width]="to.label ? '150px' : 'unset'"
         [style.padding-bottom]="to.isNotInput ? 'unset' : '2.5em'"
       >
         {{ to.label }}
