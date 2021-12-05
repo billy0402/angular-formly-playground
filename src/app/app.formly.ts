@@ -206,6 +206,33 @@ export const appFields: FormlyFieldConfig[] = [
           ],
         },
       },
+      {
+        key: 'table',
+        type: 'table',
+        templateOptions: {
+          label: 'Table',
+          isNotInput: true,
+          headers: ['Company', 'Contact', 'Country'],
+          body: ['company', 'contact', 'country'],
+          data: [
+            {
+              company: 'Alfreds Futterkiste',
+              contact: 'Maria Anders',
+              country: 'Germany',
+            },
+            {
+              company: 'Centro comercial Moctezuma',
+              contact: 'Francisco Chang',
+              country: 'Mexico',
+            },
+            {
+              company: 'Ernst Handel',
+              contact: 'Roland Mendel',
+              country: 'Austria',
+            },
+          ],
+        },
+      },
     ],
   },
 ];

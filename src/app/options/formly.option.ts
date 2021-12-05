@@ -10,6 +10,7 @@ import { FormlyFieldFile } from '@custom-formly/formly-field-file.component';
 import { FormlyFieldAutocomplete } from '@custom-formly/formly-field-autocomplete.component';
 import { FormlyFieldPlainText } from '@custom-formly/formly-field-plain-text.component';
 import { FormlyFieldLinks } from '@custom-formly/formly-field-links.component';
+import { FormlyFieldTable } from '@custom-formly/formly-field-table.component';
 import { LabelWrapperComponent } from '@custom-formly/formly-label-wrapper.component';
 import { DateRangeWrapperComponent } from '@custom-formly/formly-date-range-wrapper.component';
 
@@ -62,6 +63,11 @@ export const formlyModuleConfig: ConfigOption = {
     {
       name: 'links',
       component: FormlyFieldLinks,
+      wrappers: ['label-wrapper'],
+    },
+    {
+      name: 'table',
+      component: FormlyFieldTable,
       wrappers: ['label-wrapper'],
     },
   ],
