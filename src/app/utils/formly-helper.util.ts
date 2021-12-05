@@ -1,4 +1,16 @@
 import { FormlyFieldConfig } from '@ngx-formly/core';
+import {
+  FormlyHookFn,
+  FormlyLifeCycleOptions,
+} from '@ngx-formly/core/lib/components/formly.field.config';
+
+export const valueChangeHookConfig: FormlyLifeCycleOptions<FormlyHookFn> = {
+  onChanges: (field) => {
+    if (field?.formControl?.value) {
+      field.templateOptions!.value = field.formControl.value;
+    }
+  },
+};
 
 export class FormlyHelper {
   // https://stackoverflow.com/questions/15523514/find-by-key-deep-in-a-nested-array

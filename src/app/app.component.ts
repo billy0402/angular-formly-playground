@@ -24,6 +24,11 @@ export class AppComponent implements OnInit {
     const field = FormlyHelper.getField(this.fields, 'plainText');
     console.log(field);
     field!.templateOptions!.label = 'Test';
+
+    // this.model = {
+    //   ...this.model,
+    //   plainText: 'Test',
+    // };
   }
 
   disabledForm(): void {

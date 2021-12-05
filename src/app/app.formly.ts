@@ -2,6 +2,8 @@ import { of } from 'rxjs';
 
 import { FormlyFieldConfig } from '@ngx-formly/core';
 
+import { valueChangeHookConfig } from '@utils/formly-helper.util';
+
 const states = ['Alabama', 'Alaska', 'American Samoa', 'Arizona', 'Arkansas'];
 
 function filterStates(name: string): string[] {
@@ -177,6 +179,7 @@ export const appFields: FormlyFieldConfig[] = [
           value: 'Plain Text',
           color: 'gray',
         },
+        hooks: valueChangeHookConfig,
       },
     ],
   },
