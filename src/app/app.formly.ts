@@ -194,6 +194,18 @@ export const appFields: FormlyFieldConfig[] = [
           disabled: true,
         },
       },
+      {
+        key: 'links',
+        type: 'links',
+        templateOptions: {
+          label: 'Links',
+          isNotInput: true,
+          links: [
+            { name: 'Apple', path: 'https://www.apple.com/tw/' },
+            { name: 'Google', path: 'https://www.google.com.tw/' },
+          ],
+        },
+      },
     ],
   },
 ];

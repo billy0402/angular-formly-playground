@@ -10,6 +10,7 @@ import { FormlyFormGroup } from './formly-form-group.component';
 import { FormlyFieldFile } from './formly-field-file.component';
 import { FormlyFieldAutocomplete } from './formly-field-autocomplete.component';
 import { FormlyFieldPlainText } from './formly-field-plain-text.component';
+import { FormlyFieldLinks } from './formly-field-links.component';
 import { LabelWrapperComponent } from './formly-label-wrapper.component';
 import { DateRangeWrapperComponent } from './formly-date-range-wrapper.component';
 import { FileValueAccessor } from './file-value-accessor.directive';
@@ -20,6 +21,7 @@ import { FileValueAccessor } from './file-value-accessor.directive';
     FormlyFieldFile,
     FormlyFieldAutocomplete,
     FormlyFieldPlainText,
+    FormlyFieldLinks,
     LabelWrapperComponent,
     DateRangeWrapperComponent,
     FileValueAccessor,
@@ -35,6 +37,7 @@ import { FileValueAccessor } from './file-value-accessor.directive';
     FormlyFieldFile,
     FormlyFieldAutocomplete,
     FormlyFieldPlainText,
+    FormlyFieldLinks,
     LabelWrapperComponent,
     DateRangeWrapperComponent,
   ],
