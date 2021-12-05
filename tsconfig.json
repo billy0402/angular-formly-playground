@@ -20,7 +20,8 @@
     "paths": {
       "@custom-formly/*": ["src/app/custom-formly/*"],
       "@modules/*": ["src/app/modules/*"],
-      "@options/*": ["src/app/options/*"]
+      "@options/*": ["src/app/options/*"],
+      "@utils/*": ["src/app/utils/*"]
     }
   },
   "angularCompilerOptions": {
