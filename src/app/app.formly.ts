@@ -174,12 +174,25 @@ export const appFields: FormlyFieldConfig[] = [
       {
         key: 'plainText',
         type: 'plain-text',
+        defaultValue: 'Plain Text',
         templateOptions: {
           label: 'Plain Text',
-          value: 'Plain Text',
+          isNotInput: true,
           color: 'gray',
         },
         hooks: valueChangeHookConfig,
+      },
+      {
+        key: 'inputPlainText',
+        type: 'input',
+        wrappers: ['label-wrapper'],
+        defaultValue: 'Input Plain Text',
+        className: 'input-plain-text',
+        templateOptions: {
+          label: 'Input',
+          isNotInput: true,
+          disabled: true,
+        },
       },
     ],
   },

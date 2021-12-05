@@ -17,7 +17,6 @@ import { FieldType } from '@ngx-formly/core';
     `
       .plain-text {
         margin: 0;
-        padding-bottom: 2.5em;
       }
     `,
   ],

@@ -20,15 +20,17 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  updateModel(): void {
+    this.model = {
+      ...this.model,
+      inputPlainText: 'Test',
+    };
+  }
+
   changePlainText(): void {
     const field = FormlyHelper.getField(this.fields, 'plainText');
     console.log(field);
     field!.templateOptions!.label = 'Test';
-
-    // this.model = {
-    //   ...this.model,
-    //   plainText: 'Test',
-    // };
   }
 
   disabledForm(): void {

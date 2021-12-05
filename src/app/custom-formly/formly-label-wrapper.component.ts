@@ -9,7 +9,12 @@ import { FieldWrapper } from '@ngx-formly/core';
       class="label-wrapper"
       [class.label-wrapper-vertical]="to.flexDirection === 'vertical'"
     >
-      <label [style.width]="to.label ? '100px' : 'unset'">{{ to.label }}</label>
+      <label
+        [style.width]="to.label ? '100px' : 'unset'"
+        [style.padding-bottom]="to.isNotInput ? 'unset' : '2.5em'"
+      >
+        {{ to.label }}
+      </label>
       <ng-container #fieldComponent=""></ng-container>
     </div>
   `,
@@ -23,7 +28,6 @@ import { FieldWrapper } from '@ngx-formly/core';
         flex-direction: row;
 
         label {
-          padding-bottom: 2.5em;
           color: gray;
           font-size: 15px;
         }

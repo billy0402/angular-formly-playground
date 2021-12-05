@@ -2,3 +2,9 @@ form {
   margin: 3% auto;
   width: 50%;
 }
+
+::ng-deep .input-plain-text {
+  .mat-input-element:disabled {
+    color: black;
+  }
+}
