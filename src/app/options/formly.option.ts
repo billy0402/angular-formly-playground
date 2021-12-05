@@ -56,6 +56,7 @@ export const formlyModuleConfig: ConfigOption = {
     {
       name: 'plain-text',
       component: FormlyFieldPlainText,
+      wrappers: ['label-wrapper'],
     },
   ],
   wrappers: [

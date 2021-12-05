@@ -4,12 +4,20 @@ import { FieldType } from '@ngx-formly/core';
 
 @Component({
   selector: 'formly-field-plain-text',
-  template: `<p class="plain-text">{{ to.label }}</p>`,
+  template: `
+    <p
+      class="plain-text"
+      [style.color]="to.color"
+      [style.margin-left]="to.label ? 'unset' : '100px'"
+    >
+      {{ to.value }}
+    </p>
+  `,
   styles: [
     `
       .plain-text {
-        margin-left: 100px;
-        color: gray;
+        margin: 0;
+        padding-bottom: 2.5em;
       }
     `,
   ],

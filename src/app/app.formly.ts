@@ -174,6 +174,8 @@ export const appFields: FormlyFieldConfig[] = [
         type: 'plain-text',
         templateOptions: {
           label: 'Plain Text',
+          value: 'Plain Text',
+          color: 'gray',
         },
       },
     ],
