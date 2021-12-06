@@ -6,6 +6,7 @@ import { FormlyFieldRadio } from '@ngx-formly/material/radio';
 import { FormlyFieldSelect } from '@ngx-formly/material/select';
 
 import { FormlyFormGroup } from '@custom-formly/formly-form-group.component';
+import { FormlyFormArray } from '@custom-formly/formly-form-array.component';
 import { FormlyFieldFile } from '@custom-formly/formly-field-file.component';
 import { FormlyFieldAutocomplete } from '@custom-formly/formly-field-autocomplete.component';
 import { FormlyFieldPlainText } from '@custom-formly/formly-field-plain-text.component';
@@ -19,6 +20,10 @@ export const formlyModuleConfig: ConfigOption = {
     {
       name: 'form-group',
       component: FormlyFormGroup,
+    },
+    {
+      name: 'form-array',
+      component: FormlyFormArray,
     },
     {
       name: 'input',

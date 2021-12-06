@@ -7,6 +7,7 @@ import { FormlyModule } from '@ngx-formly/core';
 import { MaterialModule } from '@modules/material.module';
 
 import { FormlyFormGroup } from './formly-form-group.component';
+import { FormlyFormArray } from './formly-form-array.component';
 import { FormlyFieldFile } from './formly-field-file.component';
 import { FormlyFieldAutocomplete } from './formly-field-autocomplete.component';
 import { FormlyFieldPlainText } from './formly-field-plain-text.component';
@@ -19,6 +20,7 @@ import { FileValueAccessor } from './file-value-accessor.directive';
 @NgModule({
   declarations: [
     FormlyFormGroup,
+    FormlyFormArray,
     FormlyFieldFile,
     FormlyFieldAutocomplete,
     FormlyFieldPlainText,
@@ -36,6 +38,7 @@ import { FileValueAccessor } from './file-value-accessor.directive';
   ],
   exports: [
     FormlyFormGroup,
+    FormlyFormArray,
     FormlyFieldFile,
     FormlyFieldAutocomplete,
     FormlyFieldPlainText,

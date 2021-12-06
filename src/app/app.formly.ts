@@ -233,6 +233,52 @@ export const appFields: FormlyFieldConfig[] = [
           ],
         },
       },
+      {
+        key: 'formArray',
+        type: 'form-array',
+        defaultValue: [{}],
+        fieldArray: {
+          type: 'form-group',
+          wrappers: ['label-wrapper'],
+          templateOptions: {
+            label: 'Form Array',
+            flexDirection: 'horizontal',
+          },
+          fieldGroup: [
+            {
+              key: 'name',
+              type: 'input',
+              templateOptions: {
+                label: 'Name',
+                placeholder: 'Placeholder',
+                description: 'Description',
+              },
+            },
+            {
+              key: 'email',
+              type: 'input',
+              templateOptions: {
+                type: 'email',
+                label: 'Email',
+                placeholder: 'Placeholder',
+                description: 'Description',
+                required: true,
+              },
+            },
+            {
+              key: 'age',
+              type: 'input',
+              templateOptions: {
+                type: 'number',
+                label: 'Age',
+                placeholder: 'Placeholder',
+                description: 'Description',
+                required: true,
+              },
+            },
+          ],
+        },
+      },
     ],
   },
 ];

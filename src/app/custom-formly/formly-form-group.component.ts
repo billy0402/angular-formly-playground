@@ -15,6 +15,14 @@ import { FormlyFieldInput } from '@ngx-formly/material/input';
     `
       .form-group-horizontal {
         display: flex;
+
+        > * {
+          margin-right: 20px;
+
+          &:last-child {
+            margin-right: unset;
+          }
+        }
       }
     `,
   ],
