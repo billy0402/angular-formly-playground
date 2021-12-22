@@ -15,6 +15,7 @@ import { FormlyFieldLinks } from './formly-field-links.component';
 import { FormlyFieldTable } from './formly-field-table.component';
 import { LabelWrapperComponent } from './formly-label-wrapper.component';
 import { DateRangeWrapperComponent } from './formly-date-range-wrapper.component';
+import { CounterWrapperComponent } from './formly-field-counter.component';
 import { FileValueAccessor } from './file-value-accessor.directive';
 
 @NgModule({
@@ -28,6 +29,7 @@ import { FileValueAccessor } from './file-value-accessor.directive';
     FormlyFieldTable,
     LabelWrapperComponent,
     DateRangeWrapperComponent,
+    CounterWrapperComponent,
     FileValueAccessor,
   ],
   imports: [
@@ -46,6 +48,7 @@ import { FileValueAccessor } from './file-value-accessor.directive';
     FormlyFieldTable,
     LabelWrapperComponent,
     DateRangeWrapperComponent,
+    CounterWrapperComponent,
   ],
 })
 export class CustomFormlyModule {}

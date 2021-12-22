@@ -180,6 +180,18 @@ export class AppFormlyService {
           },
         },
         {
+          wrappers: ['label-wrapper', 'counter-wrapper', 'form-field'],
+          key: 'counter',
+          type: 'input',
+          templateOptions: {
+            label: 'Counter',
+            type: 'number',
+            placeholder: 'Placeholder',
+            description: 'Description',
+            required: true,
+          },
+        },
+        {
           key: 'plainText',
           type: 'plain-text',
           defaultValue: 'Plain Text',

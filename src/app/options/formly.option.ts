@@ -14,6 +14,7 @@ import { FormlyFieldLinks } from '@custom-formly/formly-field-links.component';
 import { FormlyFieldTable } from '@custom-formly/formly-field-table.component';
 import { LabelWrapperComponent } from '@custom-formly/formly-label-wrapper.component';
 import { DateRangeWrapperComponent } from '@custom-formly/formly-date-range-wrapper.component';
+import { CounterWrapperComponent } from '@custom-formly/formly-field-counter.component';
 
 export const formlyModuleConfig: ConfigOption = {
   types: [
@@ -79,6 +80,7 @@ export const formlyModuleConfig: ConfigOption = {
   wrappers: [
     { name: 'label-wrapper', component: LabelWrapperComponent },
     { name: 'date-range-wrapper', component: DateRangeWrapperComponent },
+    { name: 'counter-wrapper', component: CounterWrapperComponent },
   ],
   validationMessages: [{ name: 'required', message: 'This field is required' }],
   extras: { lazyRender: true },
