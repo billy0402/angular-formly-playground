@@ -5,7 +5,7 @@ import { FormlyFieldConfig } from '@ngx-formly/core';
 
 import { FormlyHelper } from '@utils/formly-helper.util';
 
-import { appFields } from './app.formly';
+import { AppFormlyService } from './app-formly.service';
 
 @Component({
   selector: 'app-root',
@@ -14,30 +14,29 @@ import { appFields } from './app.formly';
 })
 export class AppComponent implements OnInit {
   title = 'angular-formly-playground';
-  form = new FormGroup({});
-  model = {};
-  fields: FormlyFieldConfig[] = appFields;
+
+  constructor(public formlyService: AppFormlyService) {}
 
   ngOnInit(): void {}
 
   updateModel(): void {
-    this.model = {
-      ...this.model,
+    this.formlyService.model = {
+      ...this.formlyService.model,
       inputPlainText: 'Test',
     };
   }
 
   changePlainText(): void {
-    const field = FormlyHelper.getField(this.fields, 'plainText');
+    const field = FormlyHelper.getField(this.formlyService.fields, 'plainText');
     console.log(field);
     field!.templateOptions!.label = 'Test';
   }
 
   disabledForm(): void {
-    FormlyHelper.disabled(this.fields, ['file']);
+    FormlyHelper.disabled(this.formlyService.fields, ['file']);
   }
 
   onSubmit(): void {
-    console.log(this.model);
+    console.log(this.formlyService.model);
   }
 }

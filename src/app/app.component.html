@@ -1,12 +1,16 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
-  <formly-form [form]="form" [fields]="fields" [model]="model"></formly-form>
-  <p>{{ form.value | json }}</p>
-  <p>{{ model | json }}</p>
+<form [formGroup]="formlyService.form" (ngSubmit)="onSubmit()">
+  <formly-form
+    [form]="formlyService.form"
+    [fields]="formlyService.fields"
+    [model]="formlyService.model"
+  ></formly-form>
+  <p>{{ formlyService.form.value | json }}</p>
+  <p>{{ formlyService.model | json }}</p>
   <button
     type="submit"
     mat-flat-button
     color="primary"
-    [disabled]="form.invalid"
+    [disabled]="formlyService.form.invalid"
   >
     Submit
   </button>
